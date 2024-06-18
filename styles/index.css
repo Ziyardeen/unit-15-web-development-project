@@ -1,0 +1,90 @@
+/* home pages */
+
+.container {
+    padding: 1rem 2rem;
+    display: block;
+    /* padding: 20px 5px; */
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.video-clip{
+    margin-left: auto;
+    position: relative;
+    width: 30rem;
+}
+
+.video-clip::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(10, 7, 6, 0.507);
+}
+
+video {
+    width:100%;
+    display: block;
+    height: auto;
+}
+
+.overview {
+    width: 27.7rem;
+    margin-top: 0.5rem;
+}
+
+.overview .heading {
+    width: 100%;
+    margin-bottom:1.5rem;
+}
+
+.heading h2 {
+    color: whitesmoke;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+}
+
+.overview p {
+    color: whitesmoke;
+    font-size: 1rem;
+    line-height: 1.6rem;
+
+}
+
+
+/* responsivesness */
+
+@media only screen and (max-width: 850px){
+    .container {
+        max-width: 780px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .overview {
+        text-align: center;
+        width: auto;
+    }
+
+    .heading h2 {
+        font-size: 20px;
+    }
+
+    .overview p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .video-clip {
+        margin-top: 1rem;
+        width: 100%;
+    }
+}

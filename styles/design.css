@@ -1,0 +1,143 @@
+/* container style */
+.container {
+    padding: 30px 0;
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-heading {
+    text-align: center;
+    width: 100%;
+    margin-top: 40px; 
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+
+.main-heading h2 {
+    font-size: 42px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.main-heading p {
+    font-weight: 100;
+    letter-spacing: 1.6px;
+}
+
+/* left styles */
+.left, .right {
+    gap: 0.6rem;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    padding: 0.4rem;
+}
+
+/* image section here */
+.box {
+    width: 16.6rem;
+    height: 16.6rem;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    border: 4px solid rgb(26, 18, 18);
+    box-shadow: 1px 1px 1px whitesmoke,
+                2px 2px 2px whitesmoke,
+                3px 3px 3px whitesmoke,
+                4px 4px 4px whitesmoke,
+                5px 5px 5px whitesmoke,
+                6px 6px 0px rgb(201, 189, 18);
+}
+
+.game {
+    text-align: center;
+    width: auto;
+    color: whitesmoke;
+}
+
+.game .header{
+    margin-bottom: 20px;
+}
+
+.game .header h4 {
+    margin-bottom: 20px;
+    letter-spacing: 1.3px;
+}
+
+.game .header p {
+    font-weight: 100;
+}
+
+.game img {
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+.game-download {
+    margin-top:60px ;
+}
+
+.game-download a {
+    padding: 10px 15px;
+    color: whitesmoke;
+    text-transform: capitalize;
+    background-color: blue;
+    border-radius: 10px;
+    font-size: 18px;
+
+}
+
+@media only screen and (max-width: 850px){
+    .container{
+        flex-direction: column;
+        width: auto;
+    }
+
+    .main-heading {
+        padding:0  5px;
+    }
+
+    .main-heading h2 {
+        font-size: 22px;
+    }
+
+    .main-heading p {
+        font-size: 17px;
+    }
+
+    .left, .right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        margin-bottom: 40px;
+    }
+
+    .game-download {
+        margin: 20px 0 40px 0;
+    }
+
+}
+
+@media only screen and (max-width: 1438px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        margin-bottom: 30px;
+    }
+
+    .right {
+        margin-top: 30px;
+    }
+
+} 
